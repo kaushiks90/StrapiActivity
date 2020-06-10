@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activities",
+  "info": {
+    "name": "activity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_de": {
+      "type": "string"
+    },
+    "title_es": {
+      "type": "string"
+    },
+    "subTitle_en": {
+      "type": "string"
+    },
+    "subTitle_de": {
+      "type": "string"
+    },
+    "subTitle_es": {
+      "type": "string"
+    },
+    "description_en": {
+      "type": "richtext"
+    },
+    "description_de": {
+      "type": "richtext"
+    },
+    "description_es": {
+      "type": "richtext"
+    },
+    "picture": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "price": {
+      "type": "float"
+    }
+  }
+}
